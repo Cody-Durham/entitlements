@@ -1,0 +1,242 @@
+@import "../../styles/global/Colors";
+@import "../../styles/global/globalMixins";
+
+* {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+// screen reader accessibility hidden!
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+}
+
+.select {
+    width: 410px;
+}
+
+// This is used for "bolding" text in chrome
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+hr {
+    height: 1px;
+    background: $grey4a;
+    border: none;
+}
+
+.dob-label {
+    margin-top: 20px;
+}
+
+.disabledColor {
+    background: rgb(227, 227, 227);
+    opacity: .6;
+    color: black;
+    font-weight: 600;
+}
+
+.gutter-80 {
+    max-width: 1800px;
+    padding: 20px 9px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.gutter-90 {
+    max-width: 1800px;
+    padding: 20px 9px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.gutter-95 {
+    padding: 20px 9px;
+    margin: 0 auto;
+    width: 95%;
+    margin-top: -10px;
+}
+
+.grade-gutter-90 {
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 90%;
+
+    .will-be {
+        text-decoration: underline;
+    }
+
+    .bold {
+        font-weight: 650;
+    }
+}
+
+.link-color {
+    color: $pearl-blue
+}
+
+.out-of-bounds-container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: center;
+    width: 100%;
+
+    .out-of-bounds {
+        @include borderRadius(10px);
+        @include shadow();
+        align-items: center;
+        background: $grey1;
+        border: 2px solid $grey2;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        padding: 50px;
+        width: 80%;
+    }
+
+    hr {
+        color: $grey4a;
+        width: 90%;
+    }
+}
+
+.top-label {
+    color: $dk-blue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: none;
+}
+
+.top-label-secondary-text {
+    color: $dk-blue;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.yellow-box {
+    @include borderRadius(4px);
+    background: $important;
+    padding: 3px 10px;
+    font-weight: 600;
+}
+
+.select {
+    border: none;
+    background: $grey0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid $grey2;
+}
+
+
+// Below is the styling for the table of current entitlements by job profile
+.current-entitlement-table {
+    max-height: 800px;
+    overflow-y: auto; // scrollable
+    contain: layout;
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0px;
+        width: 100%;
+
+        thead>tr>th {
+            @include borderRadius(5px 5px 0 0);
+            background-color: $pale-blue;
+            border-color: $grey2;
+            border-style: solid;
+            border-width: 1px;
+            color: $dk-blue;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 5px;
+            text-align: center;
+        }
+
+        tbody>tr {
+            border-left: 1px solid $grey2;
+            border-right: 1px solid $grey2;
+        }
+
+        tbody>tr.stripe {
+            background-color: $grey0;
+        }
+
+        tbody>tr>td {
+            border: 1px solid $grey1;
+            height: 50px;
+            font-size: 0.78rem;
+            font-size: 0.85rem;
+            padding: 5px 5px 5px 10px;
+            height:500 !important;
+        }
+
+        tbody>tr>td.email {
+            max-width: 10%;
+            width: 180px;
+            word-wrap: anywhere;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        tbody>tr>td.first {
+            border-left: 1px solid $grey2;
+        }
+
+        tbody>tr>td.last {
+            border-right: 1px solid $grey2;
+        }
+
+        tfoot>tr {
+            background-color: white;
+        }
+
+        tfoot>tr>td {
+            border-top: 1px solid $grey2;
+            padding-top: 10px;
+        }
+
+        tfoot>tr>td>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        tfoot>tr>td>div>.showing-records {
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 5px;
+            position: absolute;
+            right: 4%;
+        }
+
+        .special-cell {
+            vertical-align: top;
+        }
+
+        .job-name {
+            width: 300px;
+        }
+
+        .special-cell-mapping {
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .edit {
+            width: 50px;
+        }
+    }
+}

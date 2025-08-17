@@ -1,0 +1,44 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.white-background-container {
+	// @include shadow();
+	border-radius: 5px;
+	border: 1px solid $grey2;
+	margin-top: 20px;
+	padding: 30px;
+
+	h5 {
+		color: $pearl-blue;
+	}
+}
+.white-background-container-shadow {
+	@include shadow();
+	border-radius: 5px;
+	border: 1px solid $grey2;
+	margin-top: 20px;
+	padding: 30px;
+
+	h5 {
+		color: $pearl-blue;
+	}
+}
+
+.select-job-profile-container {
+	margin-top: 20px;
+}
+
+.job-profiles-missing-entitlements {
+	@include borderRadius (5px);
+	background: $important;
+	font-weight: 550;
+	// font-size: 18px;
+	width: 440px;
+	padding: 5px 20px;
+
+}
+.setup-entitlement-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,68 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+
+.toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $pearl-blue;
+    padding: 0 30px;
+
+    .title-container {
+        display: flex;
+        align-items: center;
+
+        .logo-text1 {
+            font-size: 1.3rem;
+            font-weight: 550;
+            color: $DCSD-logo-green;
+        }
+        .logo-text2 {
+            font-size: 1.3rem;
+            font-weight: 550;
+            margin-top: -8px;
+            color: $pearl-blue;
+        }
+    }
+}
+
+// ----------------------------------------------------
+// Media queries
+@media only screen and (max-width: 1182px) {
+    .logo-container {
+        margin-right: 20px;
+    }
+
+    .text-container {
+        margin-top: 3px;
+        margin-left: -18px !important;
+    }
+
+    .logo-text {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 893px) {
+    .logo-container {
+        transform: scale(.6);
+    }
+
+    .text-container {
+        margin-top: 5px;
+        margin-left: -18px !important;
+    }
+
+    .logo-text {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .icon {
+        // border: 3px solid red;
+        margin-top: 5px;
+        transform: scale(1);
+    }
+}

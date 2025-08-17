@@ -1,0 +1,38 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.entitlement-info {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column !important;
+    font-size: 18px;
+    font-weight: 550;
+    div {
+        margin-top: 10px;
+    }
+    span {
+        padding: 2px 10px;
+    }
+    .profile {
+        @include borderRadius(3px);
+        background: $important;
+    }
+    .type {
+        @include borderRadius(3px);
+        background: $pale-blue;
+    }
+    .id {
+        @include borderRadius(3px);
+        background: $pale-blue;
+    }
+}
+
+.select-location-container {
+    color: $pearl-blue;
+    .select {
+		width: 410px;
+	}
+}
+
+
+

@@ -1,0 +1,15 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.golden-container {
+    background: $important;
+    @include borderRadius(10px);
+    padding: 10px;
+
+    .golden-container-label {
+        font-weight: bold;
+    }
+    .golden-container-message-bold {
+        font-weight: 600;
+    }
+}

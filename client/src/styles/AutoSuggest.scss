@@ -1,0 +1,136 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+
+/* Auto Suggest */
+.auto-suggest-contain {
+    border: 2px solid $grey2;
+    border-radius: 10px;
+    width: 500px;
+    position: absolute;
+    overflow-x: hidden;
+    background: #ffffff;
+    max-height: 500px;
+    min-height: 200px;
+    z-index: 2000;
+}
+.auto-suggest {
+    button {
+        text-align: left;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.option-list-ul {
+    list-style-type: none;
+    padding-left: 0px !important;
+    margin-bottom: 20px;
+}
+
+.option-close-button {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-result-container {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chosen-student-search-container {
+    display: flex;
+    
+    .chosen-student-container {
+        @include borderRadius(5px);
+        display: flex;
+        align-items: center;
+        background: white;
+        min-height: 32px;
+        padding: 0 5px;
+        min-width: 500px;
+        margin-right: -20px;
+    
+        .chosen-student-text {
+            font-size: 16px;
+            font-weight: 500;
+            color: $pearl-blue;
+        }
+    }
+}
+.chosen-employee-search-container {
+    display: flex;
+    
+    .chosen-employee-container {
+        @include borderRadius(5px);
+        display: flex;
+        align-items: center;
+        background: white;
+        min-height: 32px;
+        padding: 0 5px;
+        min-width: 500px;
+        margin-right: -20px;
+    
+        .chosen-employee-text {
+            font-size: 16px;
+            font-weight: 500;
+            color: $pearl-blue;
+        }
+    }
+}
+
+.overall-permissions-container {
+    @include borderRadius(5px);
+    background: white;
+    color: $pearl-blue;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+.right-permissions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .location-icon-container {
+        cursor: pointer;
+    }
+}
+
+.no-location-container {
+    @include borderRadius(5px);
+    background: white;
+    color: $pearl-blue;
+    max-width: 1200px;
+    padding: 30px;
+
+    .no-location-school-drop {
+        margin-top: 20px;
+        @include borderRadius(5px);
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        border: none;
+        select {
+            border: 2px solid $grey1;
+            @include borderRadius(5px);
+            width: 100%;
+            padding: 0.5em 3.5em 0.5em 1em;
+        }
+    }
+}
+.location-incorrect-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 155px;
+    margin-top: 20px;
+}
+.incorrect-text {
+    font-size: 14px;
+    margin-top: 4px;
+}

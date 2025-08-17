@@ -1,0 +1,50 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.overall-container {
+    display: flex;
+    margin: 20px 20px 40px 20px !important;
+
+    .left-side {
+        width: 50%;
+        display: flex;
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+        .header-button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: -8px;
+
+            .logo-header {
+                color: $dk-blue;
+                font-size: 1.8em;
+                font-weight: 600;
+            }
+        }
+    }
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .overall-container {
+        transform: scale(.9);
+        margin: 20px 20px 10px 20px !important;
+
+        .logo-container {
+            margin-top: -5px;
+        }
+
+        .logo-header {
+            font-size: 24px !important;
+        }
+    }
+}

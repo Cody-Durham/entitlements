@@ -1,0 +1,75 @@
+@import "../styles/global/Colors";
+@import "../styles/global/GlobalMixins";
+
+.accordion-container {
+    @include borderRadius(5px);
+    border: 2px solid $grey1;
+}
+
+.accordion-body {
+    border: none;
+    background: $grey0;
+    & h4 {
+        color: red;
+    }
+}
+
+.group-background {
+    display: flex;
+    justify-content: center;
+    @include borderRadius(10px);
+    background: $grey0;
+    padding: 20px;
+
+    .group-container {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        .flags-container {
+            border: 1px solid red;
+        }
+        .label {
+            color: $pearl-blue;
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 500
+        }
+
+        .availableSelected-group {
+            @include borderRadius(5px);
+            background: white;
+            padding-left: 30px;
+            height: 400px;
+            overflow: hidden;
+
+            .options-buttons {
+                @include borderRadius(5px);
+                border: none;
+                background: white;
+                height: 400px;
+                width: 100%;
+            }
+        }
+    }
+
+    .middle {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .add-remove-button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+    }
+    .selected-flags-container {
+        margin-top: 20px;
+    }
+}
+

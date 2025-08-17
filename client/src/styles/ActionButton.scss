@@ -1,0 +1,426 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.button-with-status-container {
+  display: flex
+}
+.status-on-button {
+  position: relative;
+  bottom: 10px;
+  right: 20px
+}
+
+.action-button-reg {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+    width: 150px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  
+  .action-button-reg-ghost {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    border: 1px solid $pearl-blue;
+    background: white;
+    color: $pearl-blue;
+    height: 30px;
+    transition: 0.2s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+    width: 150px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue;
+      color: white;
+      border: none;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-reg-ghost-long {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    border: 1px solid $pearl-blue;
+    background: white;
+    color: $pearl-blue;
+    min-height: 30px;
+    transition: 0.2s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+    width: 250px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue;
+      color: white;
+      border: none;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+.action-button-80 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 80px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+.action-button-100 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 100px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-150 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 150px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-200 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 200px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-300 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 300px;
+    margin: 40px 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+  .action-button-small-trashCan {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 20px;
+    transition: 0.1s ease;
+    width: 40px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+   .action-button-cancel {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: 2px solid $pearl-blue;
+    background: $grey2;
+    background: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $grey3;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-hide-dropdown {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    background: $pearl-blue;
+    background: $grey2;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .51;
+      cursor: not-allowed;
+    }
+  };
+
+    .action-button-admin {
+    @include borderRadius(3px);
+    cursor: pointer;
+    border: none;
+    background: $dashboard-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 7px;
+    font-weight: 600;
+    font-size: .85em;
+    margin-top: 10px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      padding-left: 30px;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+  .back-to-admin-home {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    min-width: 260px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+  };
+
+  .close-x-icon-button {
+    @include borderRadius(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: none;
+    padding: 3px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    color: $grey3;
+    background: white;
+    border: 2px solid $grey3;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .action-button-table-edit {
+    @include borderRadius(5px);
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .action-button-group {
+    @include borderRadius(3px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    transition: 0.1s ease;
+    background: none;
+    border: none;
+    padding: 15px 10px;
+    font-size: 14px;
+
+    &:hover {
+      background: $grey1;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+
+
+   .action-button-circle-green {
+    @include borderRadius(3px);
+    @include shadow();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgb(53, 148, 53);
+    color: white;
+    height: 50px;
+    width: 50px;
+    transition: 0.1s ease;
+    font-size: 40px;
+
+    &:hover {
+      transform: scale(1.02);
+      background: rgb(85, 179, 85);
+    }
+    &:disabled {
+      opacity: .5;
+      background: $grey2;
+      cursor: not-allowed;
+    }
+  };
+   .action-button-circle-red {
+    @include borderRadius(3px);
+    @include shadow();
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    align-items: center;
+    border: none;
+    background: rgb(201, 33, 3);
+    color: white;
+    height: 50px;
+    width: 50px;
+    transition: 0.1s ease;
+    font-size: 40px;
+
+    &:hover {
+      transform: scale(1.02);
+        background: rgb(234, 64, 34);
+    }
+    &:disabled {
+      opacity: .5;
+      background: $grey2;
+      cursor: not-allowed;
+    }
+  };
+
+
+  // Media queries ---------------------------------
+  @media only screen and (max-width: 1190px) {
+    .action-button-opt-out-locations {
+      font-size: 12px;
+    } 
+  }
+ 
+  @media only screen and (max-width: 1085px) {
+    .action-button-opt-out-locations {
+      width: 160px;
+      padding: 5px;
+      height: 45px;
+    } 
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .action-button-reason {
+      font-size: 0.7rem;
+      padding: 0px 8px;
+    }
+  } 

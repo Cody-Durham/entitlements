@@ -1,0 +1,17 @@
+@import "global/Colors";
+
+.bc-location {
+    width: 90%;
+    height: 60px;
+    background: linear-gradient(90deg, $pearl-blue 50%, white);
+    display: flex;
+    align-items: center;
+    padding: .6em 0 0 0;
+
+    & h6 {
+        color: white;
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+}

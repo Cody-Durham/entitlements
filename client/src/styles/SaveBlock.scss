@@ -1,0 +1,32 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.save-block-container {
+    @include borderRadius(10px);
+    background: $lt-pearl-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.back-only {
+    margin-top: 40px;
+}
+.excusals-dialog-container {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+    .excusal-dialog-icon {
+        display: flex;
+        flex-direction: row;
+
+        .icon-spacing {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@use "global/Colors";
+@use "global/globalMixins.scss";
+
+.dialogue-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dialogue-message-container {
+        @include globalMixins.borderRadius(10px);
+        @include globalMixins.shadow();
+        background: Colors.$grey1;
+        padding: 20px;
+        width: 60%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .dialogue-message1 {
+            font-size: 1.4rem;
+            font-weight: bolder;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .dialogue-message2 {
+            padding-top: 25px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+}
